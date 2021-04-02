@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olix</title>
+  <link rel="stylesheet" href="res/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="res/fontawesome/css/all.css">
+  <link rel="stylesheet" href="res/css/style.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+  <style>
+     body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* background-color: rgb(191, 186, 189); */
+     }
+     .timer {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 100px;
+        color: black;
+        font-family: dancing-script;
+        /* background-color:rgb(6, 6, 1); */
+     }
+  </style>
+<body>
+
+
+
+
+  <!-- Header Section Begin -->
+  <header class="header-section">
+      <div class="container-fluid">
+          <div class="inner-header">
+              <div class="logo">
+                  <a href="./index.html"><img src="img/logo.png" alt=""></a>
+              </div>
+              <div class="header-right">
+                  <img src="img/icons/search.png" alt="" class="search-trigger">
+                  <!-- <img src="img/icons/man.png" alt=""> -->
+                  <a href="cart.html">
+                      <img src="img/icons/bag.png" alt="">
+                      <!-- <span>2</span> -->
+                  </a>
+              </div>
+              <!-- <div class="user-access">
+                  <a href="#">Register</a>
+                  <a href="#" class="in">Sign in</a>
+              </div> -->
+              <nav class="main-menu mobile-menu">
+                  <ul>
+                      <li><a class="#" href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="">Categories</a>
+                          <ul class="sub-menu">
+                              <li><a href="male.html">Male</a></li>
+                              <li><a href="female.html">Female</a></li>
+                              <li><a href="kids.html">Kids</a></li>
+                               <li><a href="unisex.html">Unisex</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="active" href="contact.html">Gallery</a></li>
+                      <li><a class="" href="contact.html">contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </header>
+  <!-- Header Info Begin -->
+  <div class="header-info">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="header-item">
+                      <img src="img/icons/delivery.png" alt="">
+                      <p>Free shipping on orders over $30 in USA</p>
+                  </div>
+              </div>
+              <div class="col-md-4 text-left text-lg-center">
+                  <div class="header-item">
+                      <img src="img/icons/voucher.png" alt="">
+                      <p>20% Student Discount</p>
+                  </div>
+              </div>
+              <div class="col-md-4 text-left text-xl-right">
+                  <div class="header-item">
+                  <img src="img/icons/sales.png" alt="">
+                  <p>30% off on dresses. Use code: 30OFF</p>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Header Info End -->
+  <!-- Header End -->
+
+  <h1 class="text-center text-dark mt-5" style="font-family:dancing-script">COMING SOON!!!!!!</h1>
+  <h2 class="timer"></h2>
+  <script>
+     var countDownDate = new Date("April 30, 2021 00:00:00").getTime();
+     var timeClear = setInterval(function() {
+        var now = new Date().getTime();
+        var timeLeft = countDownDate - now;
+        var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+           (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        document.querySelector(".timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (timeLeft < 0) {
+           clearInterval(timeClear);
+           document.querySelector(".timer").innerHTML = "Timer Finished";
+        }
+     }, 1000);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="res/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="res/bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap/js/bootstrap.js"></script>
+    <script src="res/js/app.js"></script>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
